@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Operations Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+        }
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+        .icon-wrapper {
+            position: relative;
+            margin-bottom: 40px;
+        }
+        .icon-box {
+            width: 180px;
+            height: 180px;
+            background-color: #fff;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+        }
+        .icon-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .icon-box i {
+            font-size: 64px;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        .icon-box p {
+            margin: 0;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .sub-icon {
+            position: absolute;
+            bottom: -25px;
+            right: -25px;
+            width: 60px;
+            height: 60px;
+            background-color: #28a745;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .sub-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .sub-icon i {
+            font-size: 28px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Business Operations</h1>
+        <div class="icons">
+            <div class="icon-wrapper">
+                <a href="create_invoice.html" class="icon-box">
+                    <i class="fas fa-file-invoice"></i>
+                    <p>Create Invoice</p>
+                </a>
+                <a href="item_list.html" class="sub-icon" title="Item List">
+                    <i class="fas fa-list"></i>
+                </a>
+            </div>
+            <div class="icon-wrapper">
+                <a href="#" class="icon-box">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Create Purchase Order</p>
+                </a>
+            </div>
+            <div class="icon-wrapper">
+                <a href="#" class="icon-box">
+                    <i class="fas fa-boxes"></i>
+                    <p>Receive Inventory</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
